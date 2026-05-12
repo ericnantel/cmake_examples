@@ -1,0 +1,3 @@
+[submodule "toml_parser/tomlplusplus"]
+	path = toml_parser/tomlplusplus
+	url = https://github.com/marzer/tomlplusplus

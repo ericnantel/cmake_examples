@@ -1,0 +1,23 @@
+* CMake Examples [4/4]
+** DONE Episode 01: C++ TOML Parser Integration
+CLOSED: [2025-11-01 Sat 00:17]
+** DONE Episode 02: C++ Unity Plugin For Games !
+CLOSED: [2025-11-01 Sat 00:17]
+** DONE Episode 03: C++ Doxygen Docs
+CLOSED: [2025-11-01 Sat 23:40]
+** DONE Episode 04: C++ Unit Testing (CTest + GoogleTest)
+CLOSED: [2025-11-04 Tue 10:13]
+* Advanced CMake Examples [0/3]
+** TODO Episode 05: C++ GUI Application (GLFW)
+** TODO Episode 06: C++ Editor UI (ImGUI)
+** TODO Episode 07: C++ Lua Scripts
+* Expert CMake Examples [0/8]
+** TODO Episode ??: C++ CDash & CPack
+** TODO Episode ??: C++ Package Manager (Conan)
+** TODO Episode ??: C++ TUI Application (ncurses)
+** TODO Episode ??: C++ GUI Application (Qt)
+** TODO Episode ??: C++ Code Coverage (Bullseye)
+** TODO Episode ??: C++ Memory Checks (Valgrind)
+** TODO Episode ??: C++ Runtime Profiler
+** TODO Episode ??: CI/CD
+* Cancelled CMake Examples [0/0]

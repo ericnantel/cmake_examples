@@ -1,0 +1,9 @@
+
+build
+doxygen
+Testing
+.cache
+.vscode
+
+CMakeUserPresets.json
+compile_commands.json
