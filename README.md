@@ -10,6 +10,7 @@ git clone --recursive https://github.com/ericnantel/cmake_examples cmake_example
 * cmake
 * ninja (recommended)
 * a C++ compiler (gcc, clang or msvc)
+* python3
 * bear (optional)
 
 # Additionnal installs
