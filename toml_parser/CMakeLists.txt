@@ -3,7 +3,8 @@ cmake_minimum_required(VERSION 3.25)
 
 project(toml_parser)
 
-add_subdirectory(tomlplusplus)
+# add_subdirectory(tomlplusplus)
+find_package(tomlplusplus REQUIRED)
 
 set(ENTRY_POINT
 	main.cpp)
@@ -18,7 +19,8 @@ target_precompile_headers(${PROJECT_NAME}
 
 target_include_directories(${PROJECT_NAME}
 	PRIVATE public private
-	PRIVATE tomlplusplus/include)
+	# PRIVATE tomlplusplus/include
+	PRIVATE ${tomlplusplus_INCLUDE_DIR})
 
 target_sources(${PROJECT_NAME}
 	PRIVATE ${ENTRY_POINT} ${SOURCE_FILES})

@@ -6,6 +6,7 @@ git clone --recursive https://github.com/ericnantel/cmake_examples cmake_example
 
 # Install prerequisites
 * git
+* conan
 * cmake
 * ninja (recommended)
 * a C++ compiler (gcc, clang or msvc)
@@ -13,12 +14,43 @@ git clone --recursive https://github.com/ericnantel/cmake_examples cmake_example
 
 # Additionnal installs
 Some examples might require installing addtionnal packages on your system.
+Although most dependencies will use conan, there are still some packages that you
+will either need to install manually or add as a subdirectory (git submodule update).
 
 In [Episode 03](https://youtu.be/xLxtga-11iU) you will need to install:
 * doxygen
 
-In [Episode 04](https://youtu.be/Ycl1ocm8xog) you will need to install:
+In [Episode 04](https://youtu.be/Ycl1ocm8xog) you previously needed to install:
 * googletest
+But I moved the dependency to conanfile.txt
+
+# Create conan default profile
+
+* conan profile detect --force
+
+# Search conan packages online
+
+* [Conan Center](https://conan.io/center)
+
+# Install conan packages (requires conanfile.txt or conanfile.py)
+
+* conan install
+
+# Install and build conan package from source (usually when binaries are missing)
+
+* conan install --build=gtest/1.18.0
+
+# List conan installed packages
+
+* conan list
+
+# Remove conan package (A prompt will ask you to confirm removal)
+
+* conan remove gtest
+
+# Open conan default profile
+
+* nvim ~/.conan2/profiles/default
 
 # List presets
 
@@ -60,6 +92,7 @@ Ex test_simple (Episode 04):
 * [Episode 02 - C++ Unity Plugin For Games !](https://youtu.be/lzul2prPbZE)
 * [Episode 03 - C++ Doxygen Docs](https://youtu.be/xLxtga-11iU)
 * [Episode 04 - C++ Unit Testing (CTest + GoogleTest)](https://youtu.be/Ycl1ocm8xog)
+* [Episode 05 - C++ Package Manager (Conan)]()
 
 # Bear + CMake
 Usually Makefile and Ninja generators can export compile commands

@@ -45,63 +45,6 @@ add_test(NAME TimeoutTest COMMAND ${TARGET})
 set_tests_properties(TimeoutTest PROPERTIES
 	TIMEOUT 1)
 
-if (WIN32)
-	set(GTEST_ROOT
-		~/scoop/apps/googletest/current
-		CACHE PATH "Scoop (Windows) path to googletest")
-elseif(APPLE)
-	set(GTEST_ROOT
-		/opt/homebrew/opt/googletest
-		CACHE PATH "Homebrew (MacOS) path to googletest")
-elseif(UNIX)
-	# NOTE: Tested with Ubuntu using Apt
-	if (EXISTS /usr/src/googletest)
-		if (NOT EXISTS ${GTEST_ROOT})
-			message("\
-			****NOTE from author Eric Nantel****
-			Found GoogleTest Package Installed..
-			You may need to build its CMake project..
-			Do the following commands in the Terminal:
-			    cd /usr/src/googletest
-				sudo rm -rf build
-				sudo mkdir build
-				cd build
-				sudo cmake ..
-				sudo make
-			Then you can come back to your CMake project..
-			Then do the following commands in the Terminal:
-			    rm -rf build
-				cmake --preset default
-				cmake --build --preset default
-				ctest --preset default
-			You can also run ./build/GoogleTests for better logs.
-			****----------------------------****
-			")
-			set(GTEST_ROOT
-				/usr/src/googletest
-				CACHE PATH "Unix (Ubuntu) path to googletest")
-			set(GTEST_INCLUDE_DIR
-				${GTEST_ROOT}/googletest/include
-				CACHE PATH "Unix (Ubuntu) path to googletest includes")
-			set(GTEST_LIBRARY
-				${GTEST_ROOT}/build/lib/libgtest.a
-				CACHE PATH "Unix (Ubuntu) path to gtest static library")
-			set(GTEST_MAIN_LIBRARY
-				${GTEST_ROOT}/build/lib/libgtest_main.a
-				CACHE PATH "Unix (Ubuntu) path to gtest_main static library")
-		endif()
-	else()
-		message("\
-		****NOTE from author Eric Nantel****
-		GoogleTest Package Not Installed..
-		This is an optional package..
-		Do the following commands in the Terminal:
-		    sudo apt install googletest
-		    whereis googletest
-		****----------------------------****
-		")
-	endif()
-endif()
 find_package(GTest REQUIRED)
 if (GTest_FOUND)
 	set(GTEST_TARGET
