@@ -1,0 +1,14 @@
+[requires]
+tomlplusplus/3.4.0
+opengl/system
+glfw/3.4
+gtest/1.18.0
+[options]
+glfw/*:shared=False
+glfw/*:with_x11=True
+glfw/*:with_wayland=False
+[generators]
+CMakeDeps
+CMakeToolchain
+[layout]
+cmake_layout

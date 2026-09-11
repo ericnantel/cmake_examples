@@ -93,7 +93,7 @@ Ex test_simple (Episode 04):
 * [Episode 02 - C++ Unity Plugin For Games !](https://youtu.be/lzul2prPbZE)
 * [Episode 03 - C++ Doxygen Docs](https://youtu.be/xLxtga-11iU)
 * [Episode 04 - C++ Unit Testing (CTest + GoogleTest)](https://youtu.be/Ycl1ocm8xog)
-* [Episode 05 - C++ Package Manager (Conan)]()
+* [Episode 05 - C++ Package Manager (Conan)](https://youtu.be/eSeOkIbrqAQ)
 
 # Bear + CMake
 Usually Makefile and Ninja generators can export compile commands
