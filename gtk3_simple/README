@@ -1,0 +1,8 @@
+
+sudo apt update
+sudo apt install libgtk-3-dev
+conan detect profile
+conan install . --build=missing
+cmake --workflow --preset default
+./build/gtk3_simple
+

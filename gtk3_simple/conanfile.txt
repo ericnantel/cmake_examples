@@ -1,0 +1,9 @@
+[requires]
+gtk/system
+[options]
+gtk/*:version=3
+[generators]
+CMakeDeps
+CMakeToolchain
+[layout]
+cmake_layout
