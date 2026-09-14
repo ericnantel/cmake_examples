@@ -25,7 +25,7 @@ In [Episode 04](https://youtu.be/Ycl1ocm8xog) you previously needed to install:
 * googletest
 But I moved the dependency to conanfile.txt
 
-In [Episode 06]() you will need to install:
+In [Episode 06](https://youtu.be/ntbsJE8RzWY) you will need to install:
 * libgtk-3-dev (apt - Debian/Ubuntu)
 
 # Create conan default profile
@@ -97,7 +97,7 @@ Ex test_simple (Episode 04):
 * [Episode 03 - C++ Doxygen Docs](https://youtu.be/xLxtga-11iU)
 * [Episode 04 - C++ Unit Testing (CTest + GoogleTest)](https://youtu.be/Ycl1ocm8xog)
 * [Episode 05 - C++ Package Manager (Conan)](https://youtu.be/eSeOkIbrqAQ)
-* [Episode 06 - C++ Gtk3 Simple Application]() 
+* [Episode 06 - C++ Gtk3 Simple Application](https://youtu.be/ntbsJE8RzWY) 
 
 # Bear + CMake
 Usually Makefile and Ninja generators can export compile commands
